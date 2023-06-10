@@ -1,0 +1,39 @@
+source ent_prueba/Scripts/activate
+python app.py
+deactivate
+
+\dt ver --ver tablas en postresql
+\d nombre_tabla
+SELECT * FROM nombre_tabla; --Reemplaza "nombre_tabla" con el nombre real de la tabla que deseas ver. El asterisco (*) se utiliza para seleccionar todas las columnas de la tabla
+SELECT columna1, columna2, columna3 FROM nombre_tabla; --Si solo deseas ver columnas específicas, puedes reemplazar el asterisco con los nombres de las columnas separados por comas.
+DROP TABLE nombre_de_la_tabla;
+
+
+
+
+
+para crear entorno virtual:
+python3.x -m venv nombre-virtual-environment
+source nombre-virtual-environment/bin/activate
+
+borrá el entorno virtual y seguí los siguientes pasos en una consola:
+#windows
+python -m venv ent_prueba
+source ent_prueba/Scripts/activate
+pip install -r requirements.txt
+python app.py
+
+#para desactivarlo
+deactivate
+#para desintalar librerias usando un requirements.txt
+pip uninstall -r requirements.txt
+
+
+para instalar las librerías necesarias
+pip3.x install flask
+pip3.x install sqlalchemy
+
+pip3.x install psycopg2==2.9.5
+pip3.x install psycopg2-binary==2.9.5
+
+y instalen postgresql para tener una bd para poder trabajar
