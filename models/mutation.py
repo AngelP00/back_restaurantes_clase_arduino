@@ -175,13 +175,13 @@ class updatePlato(Mutation):
                 plato.precio = precio
             if menu_fk:
                 plato.menu_fk = menu_fk
-            if en_venta:
+            if en_venta is not None:
                 plato.en_venta = en_venta
-            if vegan:
+            if vegan is not None:
                 plato.vegan = vegan
-            if vegetarian:
+            if vegetarian is not None:
                 plato.vegetarian = vegetarian
-            if gluten_free:
+            if gluten_free is not None:
                 plato.gluten_free = gluten_free
             db.session.add(plato)
             db.session.commit()
